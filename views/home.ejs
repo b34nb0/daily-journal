@@ -1,0 +1,22 @@
+
+<!-- Header EJS partial -->
+<%- include("partials/header"); -%>
+
+  <h1>Home</h1>
+  <p><%= startingContent %></p>
+
+  <% if(postsArray.length !== 0) { %>
+      <h2>Posts</h2>
+    <% postsArray.forEach(function(post) { %>
+        <h3><%= post.title %></h3>
+        <p>
+          <%= post.content.substring(0,200) + " ... "%>
+          <a href="/posts/<%=post.title%>">Read More</a>
+        </p>
+    <% }); %>
+  <% } %>
+  
+
+
+<!-- Footer EJS partial -->
+<%- include("partials/footer"); -%>

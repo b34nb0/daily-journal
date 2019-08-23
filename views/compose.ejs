@@ -1,0 +1,18 @@
+
+<!-- Header EJS partial -->
+<%- include("partials/header"); -%>
+
+  <h1>Compose</h1>
+  <form class="" action="/compose" method="post">
+    <div class="form-group">
+      <label for="postTitle">Title</label>
+      <input type="text" name="postTitle" value="" class="form-control">
+      <label for="postBody">Post</label>
+      <textarea name="postBody" rows="4" cols="80" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+  </form>
+
+<!-- Footer EJS partial -->
+<%- include("partials/footer"); -%>

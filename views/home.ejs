@@ -11,12 +11,10 @@
         <h3><%= post.title %></h3>
         <p>
           <%= post.content.substring(0,200) + " ... "%>
-          <a href="/posts/<%=post.title%>">Read More</a>
+          <a href="/posts/<%=post._id%>">Read More</a>
         </p>
     <% }); %>
   <% } %>
-  
-
 
 <!-- Footer EJS partial -->
 <%- include("partials/footer"); -%>
